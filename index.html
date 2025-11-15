@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="dark-mode"> 
+
+    <div class="calculator">
+        
+        <div class="header">
+            <div class="theme-switcher">
+                <input type="checkbox" id="themeToggle" class="theme-toggle-checkbox">
+                <label for="themeToggle" class="theme-toggle-label"></label>
+            </div>
+        </div>
+
+        <div class="history">
+            <div id="historyDisplay" class="history-display">
+                </div>
+        </div>
+        
+        <div class="display">
+            <div id="previousOperand" class="previous-operand"></div>
+            <div id="currentOperand" class="current-operand">0</div>
+        </div>
+                
+        <div class="buttons">
+            <button class="btn btn-clear" data-action="clear" data-key="Escape">C</button>
+            <button class="btn btn-clear" data-action="delete" data-key="Backspace">DEL</button>
+            <button class="btn btn-operation" data-operation="%" data-key="%">%</button>
+            <button class="btn btn-operation" data-operation="/" data-key="/">/</button>
+                        
+            <button class="btn btn-number" data-number="7" data-key="7">7</button>
+            <button class="btn btn-number" data-number="8" data-key="8">8</button>
+            <button class="btn btn-number" data-number="9" data-key="9">9</button>
+            <button class="btn btn-operation" data-operation="*" data-key="*">×</button>
+                        
+            <button class="btn btn-number" data-number="4" data-key="4">4</button>
+            <button class="btn btn-number" data-number="5" data-key="5">5</button>
+            <button class="btn btn-number" data-number="6" data-key="6">6</button>
+            <button class="btn btn-operation" data-operation="-" data-key="-">-</button>
+                        
+            <button class="btn btn-number" data-number="1" data-key="1">1</button>
+            <button class="btn btn-number" data-number="2" data-key="2">2</button>
+            <button class="btn btn-number" data-number="3" data-key="3">3</button>
+            <button class="btn btn-operation" data-operation="+" data-key="+">+</button>
+                        
+            <button class="btn btn-number btn-zero" data-number="0" data-key="0">0</button>
+            <button class="btn btn-number" data-number="." data-key=".">.</button>
+            <button class="btn btn-equals" data-action="equals" data-key="Enter">=</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
